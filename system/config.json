@@ -1,0 +1,7 @@
+{
+    "useToken": false,
+    "DB_host": "localhost",
+    "DB_dbname": "DB_NAME",
+    "DB_username": "USERNAME",
+    "DB_password": "PASSWORD"
+}
