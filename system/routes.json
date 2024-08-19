@@ -1,0 +1,48 @@
+[
+  {
+    "routeName": "",
+    "routeType": "default",
+    "className": "",
+    "contants": [
+      {
+        "routeName": "api",
+        "routeType": "default",
+        "className": "",
+        "contants": [
+          {
+            "routeName": "spy",
+            "routeType": "default",
+            "className": "",
+            "contants": [
+              {
+                "routeName": "controllers",
+                "routeType": "default",
+                "className": "",
+                "contants": [
+                  {
+                    "routeName": "game",
+                    "routeType": "default",
+                    "className": "controllers\\GamesController",
+                    "contants": []
+                  },
+                  {
+                    "routeName": "set",
+                    "routeType": "default",
+                    "className": "controllers\\SetsController",
+                    "contants": []
+                  },
+                  {
+                    "routeName": "user",
+                    "routeType": "default",
+                    "className": "controllers\\UsersController",
+                    "contants": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
