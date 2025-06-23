@@ -32,7 +32,7 @@ app.use('*', async (c, next) => {
     await next();
 });
 
-app.post('/api/spy/controllers/user', async (c) => {
+app.post('/user', async (c) => {
     const { method, user } = await c.req.json();
     const userService = c.get('userService');
 
@@ -50,7 +50,7 @@ app.post('/api/spy/controllers/user', async (c) => {
     }
 });
 
-app.post('/api/spy/controllers/set', async (c) => {
+app.post('/set', async (c) => {
     const { method, set, user, words } = await c.req.json();
     const setService = c.get('setService');
 
@@ -76,7 +76,7 @@ app.post('/api/spy/controllers/set', async (c) => {
     }
 });
 
-app.post('/api/spy/controllers/game', async (c) => {
+app.post('/game', async (c) => {
     const { method, game, user, userId } = await c.req.json();
     const gameService = c.get('gameService');
 
