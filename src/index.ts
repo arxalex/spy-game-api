@@ -20,6 +20,11 @@ type Variables = {
 
 const app = new Hono<{ Bindings: Env; Variables: Variables }>();
 
+app.use('*', cors({
+    origin: ['https://apps.arxalex.com'],
+    allowMethods: ['GET', 'POST']
+}));
+
 app.use('*', async (c, next) => {
     const userService = new UserService(c.env.DB);
     const setService = new SetService(c.env.DB, userService);
