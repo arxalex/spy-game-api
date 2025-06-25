@@ -7,6 +7,7 @@ import { Set } from './model/set.model';
 import { User } from './model/user.model';
 import { Word } from './model/word.model';
 import { D1Database } from "@cloudflare/workers-types";
+import { cors } from "hono/dist/types/middleware/cors";
 
 type Env = {
     DB: D1Database;
